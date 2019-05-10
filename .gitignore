@@ -1,5 +1,3 @@
-.REST
-.idea
 .envrc*
 # Logs
 *.log
@@ -37,20 +35,8 @@ node_modules
 .nyc_output
 .debug
 reports
-cf-dev-ctrl
 .DS_Store
-cf-api.sublime-project
-cf-api.sublime-workspace
 .coveralls.yml
 coverage
 .idea
 *.tar.gz
-
-/nbproject/private/
-
-/server/version.json
-/errors/docs/
-/errors/docs/errors.html
-.vscode
-
-allure-results

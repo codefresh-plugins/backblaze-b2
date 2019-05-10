@@ -2,9 +2,14 @@ version: '1.0'
 
 steps:
 
+  main_clone:
+    title: Cloning repository
+    type: git-clone
+    repo: codefresh-plugins/backblaze-b2
+    git: cf_github
+
   build_step:
-    title: "Building production image"
-    stage: build
+    title: Building production image
     type: build
     dockerfile: Dockerfile
     image_name: codefresh/backblaze-b2-plugin
