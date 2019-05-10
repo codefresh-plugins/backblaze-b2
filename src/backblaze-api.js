@@ -40,7 +40,7 @@ function getSha1(path) {
     const deferred = Promise.defer();
     const hash = crypto.createHash('sha1');
     const rs = fs.createReadStream(path);
-    rs.on('error', deferred.reject);
+    rs.on('error', e => deferred.reject(e));
     rs.on('data', chunk => hash.update(chunk));
     rs.on('end', () => deferred.resolve(hash.digest('hex')));
     return deferred.promise;
