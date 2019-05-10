@@ -8,7 +8,7 @@ COPY package.json ./
 
 COPY yarn.lock ./
 
-RUN yarn install --frozen-lockfile --production
+RUN cd app && yarn install --frozen-lockfile --production
 
 # copy app files
 COPY . ./
