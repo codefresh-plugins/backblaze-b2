@@ -19,4 +19,4 @@ RUN apk add --no-cache --virtual deps python make g++ krb5-dev && \
 COPY . ./
 
 # run application
-CMD ["node", "index.js"]
+CMD ["node", "./index.js"]
