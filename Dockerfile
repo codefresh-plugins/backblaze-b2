@@ -1,18 +1,22 @@
 FROM node:10.13.0-alpine
 
-# Create app directory
-WORKDIR /app/
-VOLUME /app
+WORKDIR /root/backblaze-b2
+
+RUN apk add --no-cache bash git openssh-client
 
 COPY package.json ./
 
 COPY yarn.lock ./
 
-RUN cd /app
-RUN yarn install --frozen-lockfile --production
+# install cf-api required binaries
+RUN apk add --no-cache --virtual deps python make g++ krb5-dev && \
+    yarn install --frozen-lockfile --production && \
+    yarn cache clean && \
+    apk del deps && \
+    rm -rf /tmp/*
 
 # copy app files
 COPY . ./
 
 # run application
-CMD ["node", "/app/index.js"]
+CMD ["node", "index.js"]
