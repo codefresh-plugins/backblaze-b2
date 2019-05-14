@@ -1,4 +1,6 @@
+name: backblaze-b2
 image: codefreshplugins/backblaze-b2
+tag: 0.1.0
 version: 0.1.0
 description: Upload files to Backblaze B2 bucket
 categories:
@@ -7,7 +9,9 @@ keywords:
 - backblaze
 sources:
 - https://github.com/codefresh-plugins/backblaze-b2
-icon: https://raw.githubusercontent.com/andrii-codefresh/backblaze-b2/master/backblaze-logo-red.png
+maintainers:
+- name: andrii-codefresh
+icon: https://raw.githubusercontent.com/codefresh-plugins/backblaze-b2/master/icon.jpg
 envs:
 - name: APPLICATION_KEY_ID
   type: required
