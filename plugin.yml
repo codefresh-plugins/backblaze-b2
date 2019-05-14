@@ -7,7 +7,7 @@ keywords:
 - backblaze
 sources:
 - https://github.com/codefresh-plugins/backblaze-b2
-icon: https://raw.githubusercontent.com/codefresh-plugins/backblaze-b2/master/backblaze-logo.png
+icon: https://raw.githubusercontent.com/andrii-codefresh/backblaze-b2/master/backblaze-logo.png
 envs:
 - name: APPLICATION_KEY_ID
   type: required
