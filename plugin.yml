@@ -13,8 +13,8 @@ envs:
   type: required
   description: Application key Id in Backblaze B2
 - name: APPLICATION_KEY
-  type: Application key in Backblaze B2
-  description: Jira user
+  type: required
+  description: Application key in Backblaze B2
 - name: BUCKET_ID
   type: required
   description: Bucket Id in Backblaze B2
