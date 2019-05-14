@@ -8,7 +8,6 @@ Each file variable is an array of:
 - file name in bucket (required)
 - file MIME type (optional, if omitted type will be detected from file extension)
 
-
 ```
 List of env variables:
 APPLICATION_KEY_ID - required
